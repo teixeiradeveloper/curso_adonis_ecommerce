@@ -1,0 +1,1 @@
+docker run -d -p 3306:3306 --name mysqlteste -e MYSQL_DATABASE=adonis -e MYSQL_ROOT_PASSWORD=botucatu -d mysql:5.5
