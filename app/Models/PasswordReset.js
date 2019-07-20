@@ -7,7 +7,7 @@ class PasswordReset extends Model {
 
     static boot() {
 
-        super.boot();
+        super.boot(); //sempre deve instanciar
 
         /**
          * A hook to hash the user password before saving
@@ -27,6 +27,7 @@ class PasswordReset extends Model {
 
     }
 
+    //formata os valores para o padrao do mysql
     static get dates() {
 
         return ['created_at', 'updated_at', 'expires_at'];
